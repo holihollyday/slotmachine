@@ -90,28 +90,31 @@
          //    after the API code downloads.
          var player1;   var player2;   var player3;   var player4;   var player5;   var player6;
          function onYouTubeIframeAPIReady() {
+           //Harrison
            player1 = new YT.Player('player1', {
              height: '100',
              width: '100',
-             videoId: '6wHfCCXxRKU',
+             videoId: '7Os0jee2qoc',
              playerVars:{'rel' : 0 }
            });
            player2 = new YT.Player('player2', {
              height: '100',
              width: '100',
-             videoId: 'bebuiaSKtU4',
+             videoId: 'rGycZ_wgSHU',
              playerVars:{'rel' : 0 }
            });
+           //Amay
            player3 = new YT.Player('player3', {
              height: '100',
              width: '100',
-             videoId: 'RgDKpgUI3To',
+             videoId: 'zUOHACihE5k',
              playerVars:{'rel' : 0 }
            });
+           //Cecilia
            player4 = new YT.Player('player4', {
              height: '100',
              width: '100',
-             videoId: 'Xjs6fnpPWy4',
+             videoId: 'rGycZ_wgSHU',
              playerVars:{'rel' : 0 }
            });
            player5 = new YT.Player('player5', {
@@ -176,10 +179,14 @@ btnShuffle.addEventListener('click', () => {
  player4.pauseVideo();
  player5.pauseVideo();
  player6.pauseVideo();
+
  mCasino1.shuffle(9999);
  mCasino2.shuffle(9999);
  mCasino3.shuffle(9999);
+
+
 });
+
 
 btnStop.addEventListener('click', () => {
  switch(count) {
