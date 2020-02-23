@@ -193,30 +193,31 @@ btnShuffle.addEventListener('click', () => {
 btnStop.addEventListener('click', () => {
  switch(count) {
    case 3:
-     mCasino1.stop(function playVideo() {
-       if(mCasino1.visibleTile ==0){
-         player1.playVideo();
-       }
-       if(mCasino1.visibleTile ==1){
-         player2.playVideo();
-       }
-       if(mCasino1.visibleTile ==2){
-         player3.playVideo();
-       }
-       if(mCasino1.visibleTile ==3){
-         player4.playVideo();
-       }
-       if(mCasino1.visibleTile ==4){
-         player5.playVideo();
-       }
-       if(mCasino1.visibleTile ==5){
-         player6.playVideo();
-       }
+   mCasino1.stop(function playVideo() {
+     if(mCasino1.visibleTile ==0){
+       player1.playVideo();
      }
-   );
+     if(mCasino1.visibleTile ==1){
+       player2.playVideo();
+     }
+     if(mCasino1.visibleTile ==2){
+       player3.playVideo();
+     }
+     if(mCasino1.visibleTile ==3){
+       player4.playVideo();
+     }
+     if(mCasino1.visibleTile ==4){
+       player5.playVideo();
+     }
+     if(mCasino1.visibleTile ==5){
+       player6.playVideo();
+     }
+   }
+ );
     //  break;
    case 2:
-     mCasino2.stop();
+   mCasino2.stop();
+
     //  break;
    case 1:
      mCasino3.stop();
