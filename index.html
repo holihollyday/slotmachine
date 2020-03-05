@@ -25,59 +25,94 @@
 <!-- Slot machine example -->
    <div id="casino" style="padding-top:50px;">
      <div class="content">
-       <h1>Internet Art Slot Machine</h1>
-
        <div>
-         <div id="casino1" class="slotMachine" style="margin-left: -65px;">
-           <div class="slot slot1"><div id="player1"></div></div>
-           <div class="slot slot2"><div id="player2"></div></div>
-           <div class="slot slot3"><div id="player3"></div></div>
-           <div class="slot slot4"><div id="player4"></div></div>
-           <div class="slot slot5"><div id="player5"></div></div>
-           <div class="slot slot6"><div id="player6"></div></div>
+         <div id="casino1" class="slotMachine">
+           <div class="slot slot1"><div id="audio1"></div></div>
+           <div class="slot "><div id="audio2"></div></div>
+           <div class="slot "><div id="audio3"></div></div>
+           <div class="slot "><div id="audio1"></div></div>
+           <div class="slot "><div id="audio2"></div></div>
+           <div class="slot "><div id="audio3"></div></div>
          </div>
 
          <div id="casino2" class="slotMachine">
-           <div class="slot slot1"></div>
-           <div class="slot slot2"></div>
-           <div class="slot slot3"></div>
-           <div class="slot slot4"></div>
-           <div class="slot slot5"></div>
-           <div class="slot slot6"></div>
+           <div class="slot slot2"><div id="video1" ></div></div>
+           <div class="slot "><div id="video2" ></div></div>
+           <div class="slot "><div id="video3" ></div></div>
+           <div class="slot "><div id="video4"></div></div>
+           <div class="slot "><div id="video5"></div></div>
+           <div class="slot "><div id="video6"></div></div>
          </div>
 
          <div id="casino3" class="slotMachine">
-           <div class="slot slot1">
+           <div class="slot writing"><br>
+            <p>
+            and<br>
+                   it can be hard
+            to collect your thoughts in one place
+            to from full sentences with
+            wholesome thoughts
+            with meaning.</p>
            </div>
-           <div class="slot slot2"></div>
-           <div class="slot slot3"></div>
-           <div class="slot slot4"></div>
-           <div class="slot slot5"></div>
-           <div class="slot slot6"></div>
+           <div class="slot writing"><br>
+             <p>It can be hard
+             to find meaning
+             in someone else's
+             words.</p>
+           </div>
+           <div class="slot writing">
+           <p>
+              Tears can be cooled.<br>
+              Tears can be eaten.<br>
+              Tears can be fake.<br>
+              Tears can influence vision.<br>
+              Tears finally can be a life song.</p>
+           </div>
+           <div class="slot writing">
+           <p>
+           A tear machine that pushes out small amounts of liquid (tears) based on the facial expressions in the movie. The main technique that has been used was Machine Learning. Based on the artist's own "normal" or "cry" labeled images, if the current frame of the actress' facial expression in the video is classified as "cry", it will trigger the head drops "Tears".<p>
+          </div>
+           <div class="slot writing">
+           <p>
+              Tears can be cooled.<br>
+              Tears can be eaten.<br>
+              Tears can be fake.<br>
+              Tears can influence vision.<br>
+              Tears finally can be a life song.</p>
+           </div>
+           <div class="slot writing">
+           <p>
+              Tears can be cooled.<br>
+              Tears can be eaten.<br>
+              Tears can be fake.<br>
+              Tears can influence vision.<br>
+              Tears finally can be a life song.</p>
+            </div>
          </div>
 
-         <div class="btn-group btn-group-justified" role="group">
-           <button id="casinoShuffle" type="button" class="btn btn-primary btn-lg">Shuffle!</button>
-           <button id="casinoStop" type="button" class="btn btn-primary btn-lg">Stop!</button>
+
+         <div id="bt" class="btn-group btn-group-justified" role="group">
+           <button id="casinoShuffle" type="button" class="btn btn-primary">Shuffle!</button>
          </div>
+
        </div>
      </div>
 
      <div class="container">
-       <div class="row">
-         <div class="col-sm-10 col-md-5 offset-sm-1 offset-md-1">
-           <pre><code id="codeBlock5"></code></pre>
-         </div>
+        <div class="row">
+          <div class="col-sm-10 col-md-5 offset-sm-1 offset-md-1">
+            <pre><code id="codeBlock5"></code></pre>
+          </div>
 
-         <div class="col-sm-10 col-md-5 offset-sm-1 offset-md-0">
-           <pre><code id="codeBlock6"></code></pre>
-         </div>
-       </div>
-     </div>
-   </div>
+          <div class="col-sm-10 col-md-5 offset-sm-1 offset-md-0">
+            <pre><code id="codeBlock6"></code></pre>
+          </div>
+        </div>
+      </div>
+    </div>
 
-   <script id="codeScript5">
-  //  document.getElementById("player").style.display = "none";
+   <script id="codeBlock5">
+   // document.getElementById("video1").style.display = "none";
 
    // 2. This code loads the IFrame Player API code asynchronously.
          var tag = document.createElement('script');
@@ -88,50 +123,76 @@
 
          // 3. This function creates an <iframe> (and YouTube player)
          //    after the API code downloads.
-         var player1;   var player2;   var player3;   var player4;   var player5;   var player6;
+         var video1;   var video2;   var video3;   var video4;   var video5;   var video6;
+         var audio1;   var audio2;   var audio3;
+
+         var slotHeight =300 ; var slotWidth = 300;
          function onYouTubeIframeAPIReady() {
+           /////VIDEO WORKS////
            //Harrison
-           player1 = new YT.Player('player1', {
-             height: '100',
-             width: '100',
+           video1 = new YT.Player('video1', {
+             height: 'slotHeight',
+             width: 'slotWidth',
              videoId: '7Os0jee2qoc',
              playerVars:{'rel' : 0 }
            });
-           player2 = new YT.Player('player2', {
-             height: '100',
-             width: '100',
-             videoId: 'rGycZ_wgSHU',
+           //Alanvideo
+           video2 = new YT.Player('video2', {
+             height: 'slotHeight',
+             width: 'slotWidth',
+             videoId: 'Zp4xEFaqKv8',
              playerVars:{'rel' : 0 }
            });
            //Amay
-           player3 = new YT.Player('player3', {
-             height: '100',
-             width: '100',
+           video3 = new YT.Player('video3', {
+             height: 'slotHeight',
+             width: 'slotWidth',
              videoId: 'zUOHACihE5k',
              playerVars:{'rel' : 0 }
            });
-           //Cecilia
-           player4 = new YT.Player('player4', {
-             height: '100',
-             width: '100',
+           //Jooyoung cit-e-scape
+           video4 = new YT.Player('video4', {
+             height: 'slotHeight',
+             width: 'slotWidth',
+             videoId: '1webuQ1su0U',
+             playerVars:{'rel' : 0 }
+           });
+           //Jooyoung cit-e-scape
+           video5 = new YT.Player('video5', {
+             height: 'slotHeight',
+             width: 'slotWidth',
+             videoId: '1webuQ1su0U',
+             playerVars:{'rel' : 0 }
+           });
+           //Jooyoung garden
+           video6 = new YT.Player('video6', {
+             height: 'slotHeight',
+             width: 'slotWidth',
+             videoId: '9vV4Q7ZyLbk',
+             playerVars:{'rel' : 0 }
+           });
+           /////AUDIO WORKS////
+           //Katie
+           audio1 = new YT.Player('audio1', {
+             height: 'slotHeight',
+             width: 'slotWidth',
              videoId: 'rGycZ_wgSHU',
+             playerVars:{'rel' : 0 }
+           });
+           //Alan audio
+           audio2 = new YT.Player('audio2', {
+             height: 'slotHeight',
+             width: 'slotWidth',
+             videoId: 'P6u3TAQ0LcU',
              playerVars:{'rel' : 0 }
            });
            //Amay
-           player5 = new YT.Player('player5', {
-             height: '100',
-             width: '100',
+           audio3 = new YT.Player('audio3', {
+             height: 'slotHeight',
+             width: 'slotWidth',
              videoId: 'zUOHACihE5k',
              playerVars:{'rel' : 0 }
            });
-           //Cecilia
-           player6 = new YT.Player('player6', {
-             height: '100',
-             width: '100',
-             videoId: 'rGycZ_wgSHU',
-             playerVars:{'rel' : 0 }
-           });
-
          }
 
          // 4. The API will call this function when the video player is ready.
@@ -152,81 +213,96 @@
         //  function stopVideo() {
         //    player.stopVideo();
         //  }
+        let count = 0;
+        const btnShuffle = document.querySelector('#casinoShuffle');
+        const btnStop = document.querySelector('#casinoStop');
+        const casino1 = document.querySelector('#casino1');
+        const casino2 = document.querySelector('#casino2');
+        const casino3 = document.querySelector('#casino3');
+        const mCasino1 = new SlotMachine(casino1, {
+         active: 0,
+         delay: 500
+        });
+        const mCasino2 = new SlotMachine(casino2, {
+         active: 0,
+         delay: 500
+        });
+        const mCasino3 = new SlotMachine(casino3, {
+         active: 0,
+         delay: 500
+        });
 
-let count = 0;
-const btnShuffle = document.querySelector('#casinoShuffle');
-const btnStop = document.querySelector('#casinoStop');
-const casino1 = document.querySelector('#casino1');
-const casino2 = document.querySelector('#casino2');
-const casino3 = document.querySelector('#casino3');
-const mCasino1 = new SlotMachine(casino1, {
- active: 3,
- delay: 500
-});
-const mCasino2 = new SlotMachine(casino2, {
- active: 2,
- delay: 500
-});
-const mCasino3 = new SlotMachine(casino3, {
- active: 1,
- delay: 500
-});
-   </script>
-   <script id="codeScript6">
-btnShuffle.addEventListener('click', () => {
- count = 3;
- player1.pauseVideo();
- player2.pauseVideo();
- player3.pauseVideo();
- player4.pauseVideo();
- player5.pauseVideo();
- player6.pauseVideo();
+        </script>
 
- mCasino1.shuffle(9999);
- mCasino2.shuffle(9999);
- mCasino3.shuffle(9999);
+   <script id="codeBlock6">
 
+         btnShuffle.addEventListener('click', () => {
+         count = 3;
 
-});
+         audio1.stopVideo();audio2.stopVideo();audio3.stopVideo();
+         video1.stopVideo();video2.stopVideo();video3.stopVideo();video4.stopVideo();video5.stopVideo();video6.stopVideo();
+
+         mCasino1.shuffle(50);
+         mCasino2.shuffle(50);
+         mCasino3.shuffle(50);
 
 
-btnStop.addEventListener('click', () => {
- switch(count) {
-   case 3:
-   mCasino1.stop(function playVideo() {
-     if(mCasino1.visibleTile ==0){
-       player1.playVideo();
-     }
-     if(mCasino1.visibleTile ==1){
-       player2.playVideo();
-     }
-     if(mCasino1.visibleTile ==2){
-       player3.playVideo();
-     }
-     if(mCasino1.visibleTile ==3){
-       player4.playVideo();
-     }
-     if(mCasino1.visibleTile ==4){
-       player5.playVideo();
-     }
-     if(mCasino1.visibleTile ==5){
-       player6.playVideo();
-     }
-   }
- );
-    //  break;
-   case 2:
-   mCasino2.stop();
+          switch(count) {
+            case 3:
+            mCasino1.stop(function playVideo() {
+              console.log(mCasino1.visibleTile);
+              if(mCasino1.visibleTile ==0){
+                audio1.playVideo();
+              }
+              if(mCasino1.visibleTile ==1){
+                audio2.playVideo();
+              }
+              if(mCasino1.visibleTile ==2){
+                audio3.playVideo();
+              }
+              if(mCasino1.visibleTile ==3){
+                audio4.playVideo();
+              }
+              if(mCasino1.visibleTile ==4){
+                audio5.playVideo();
+              }
+              if(mCasino1.visibleTile ==5){
+                audio6.playVideo();
+              }
+            }
+          );
+             //  break;
+            case 2:
+             mCasino2.stop(function playVideo() {
+               console.log(mCasino2.visibleTile);
+               if(mCasino2.visibleTile ==0){
+                 video1.playVideo();
+               }
+               if(mCasino2.visibleTile ==1){
+                 video2.playVideo();
+               }
+               if(mCasino2.visibleTile ==2){
+                 video3.playVideo();
+               }
+               if(mCasino2.visibleTile ==3){
+                 video4.playVideo();
+               }
+               if(mCasino2.visibleTile ==4){
+                 video5.playVideo();
+               }
+               if(mCasino2.visibleTile ==5){
+                 video6.playVideo();
+               }
+             }
+           );
+              //  break;
+            case 1:
+              mCasino3.stop();
+             //  break;
+          }
+          count--;
+       });
 
-    //  break;
-   case 1:
-     mCasino3.stop();
-    //  break;
- }
- count--;
-
-});
-
-   </script>
+</script>
 </body>
 </html>
