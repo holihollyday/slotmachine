@@ -30,9 +30,9 @@
            <div class="slot slot1"><div id="audio1"></div></div>
            <div class="slot "><div id="audio2"></div></div>
            <div class="slot "><div id="audio3"></div></div>
-           <div class="slot "><div id="audio1"></div></div>
-           <div class="slot "><div id="audio2"></div></div>
-           <div class="slot "><div id="audio3"></div></div>
+           <div class="slot "><div id="audio4"></div></div>
+           <div class="slot "><div id="audio5"></div></div>
+           <div class="slot "><div id="audio6"></div></div>
          </div>
 
          <div id="casino2" class="slotMachine">
@@ -124,7 +124,7 @@
          // 3. This function creates an <iframe> (and YouTube player)
          //    after the API code downloads.
          var video1;   var video2;   var video3;   var video4;   var video5;   var video6;
-         var audio1;   var audio2;   var audio3;
+         var audio1;   var audio2;   var audio3;  var audio4; var audio5; var audio6;
 
          var slotHeight =300 ; var slotWidth = 300;
          function onYouTubeIframeAPIReady() {
@@ -188,6 +188,26 @@
            });
            //Amay
            audio3 = new YT.Player('audio3', {
+             height: 'slotHeight',
+             width: 'slotWidth',
+             videoId: 'zUOHACihE5k',
+             playerVars:{'rel' : 0 }
+           });
+           audio4 = new YT.Player('audio4', {
+             height: 'slotHeight',
+             width: 'slotWidth',
+             videoId: 'rGycZ_wgSHU',
+             playerVars:{'rel' : 0 }
+           });
+           //Alan audio
+           audio5 = new YT.Player('audio5', {
+             height: 'slotHeight',
+             width: 'slotWidth',
+             videoId: 'P6u3TAQ0LcU',
+             playerVars:{'rel' : 0 }
+           });
+           //Amay
+           audio6 = new YT.Player('audio6', {
              height: 'slotHeight',
              width: 'slotWidth',
              videoId: 'zUOHACihE5k',
@@ -297,7 +317,7 @@
              //  break;
           }
           count--;
-          audio1.stopVideo();audio2.stopVideo();audio3.stopVideo();
+          audio1.stopVideo();audio2.stopVideo();audio3.stopVideo();audio4.stopVideo();audio5.stopVideo();audio6.stopVideo();
           video1.stopVideo();video2.stopVideo();video3.stopVideo();video4.stopVideo();video5.stopVideo();video6.stopVideo();
 
        });
