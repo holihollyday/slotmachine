@@ -239,13 +239,9 @@
          btnShuffle.addEventListener('click', () => {
          count = 3;
 
-         audio1.stopVideo();audio2.stopVideo();audio3.stopVideo();
-         video1.stopVideo();video2.stopVideo();video3.stopVideo();video4.stopVideo();video5.stopVideo();video6.stopVideo();
-
          mCasino1.shuffle(50);
          mCasino2.shuffle(50);
          mCasino3.shuffle(50);
-
 
           switch(count) {
             case 3:
@@ -301,6 +297,9 @@
              //  break;
           }
           count--;
+          audio1.stopVideo();audio2.stopVideo();audio3.stopVideo();
+          video1.stopVideo();video2.stopVideo();video3.stopVideo();video4.stopVideo();video5.stopVideo();video6.stopVideo();
+
        });
 
 </script>
