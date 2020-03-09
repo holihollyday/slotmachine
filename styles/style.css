@@ -189,8 +189,8 @@ header a {
    padding: 60px;
    text-decoration: none;
    font-size: 16px;
-    border-radius: 80px;
-    vertical-align: middle;
+   border-radius: 80px;
+   vertical-align: middle;
  }
 
  #casino .btn-group .btn:hover, .btn-group .btn:focus {
@@ -229,3 +229,50 @@ footer{
 }
 
 .github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}
+
+@media all and (max-width:800px){
+  #casino .content > div {
+    padding-top: 255px;
+    padding-left:-20px;
+    width: 80%;
+    /*jiaqi...width: 300px;*/
+    margin: 0 auto;
+    /*transform: translateX(-50)px);*/
+  }
+  #casino .btn-group .btn {
+    padding: 30px;
+  }
+  .btn-group{
+       left:40%;
+       top:80%;
+       width: 10px;
+       height: 10px;
+  }
+  .slotMachine{
+    width: 100px;
+    height:100px;
+  }
+}
+
+  @media only screen and (max-width:320px) {
+    #casino .content > div {
+      padding-top: 255px;
+      width: 80%;
+      /*jiaqi...width: 300px;*/
+      margin: 0 auto;
+      transform: translateX(50px);
+    }
+    #casino .btn-group .btn {
+      padding: 20px;
+    }
+  .btn-group{
+        left:40%;
+        top:34.5%;
+        width: 5px;
+        height: 5px;
+  }
+  .slotMachine{
+    width: 50px;
+    height: 50px;
+  }
+  }
