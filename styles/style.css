@@ -8,12 +8,10 @@
   font-family: 'Roboto', sans-serif;
 }
 
-code {
-  border: 1px solid #eee;
-  border-radius: 5px;
+/*code {
   background-color: rgba(245, 245, 245, 0.7) !important;
   text-align: left;
-}
+}*/
 
 .well {
   padding: 25px;
@@ -254,9 +252,18 @@ footer{
   }
 }
 
-  @media only screen and (max-width:320px) {
+  @media only screen and (max-width:500px) {
+    #casino .content:nth-child(1) {
+      /*text-align: center;*/
+      /*jiaqi...background of slotmachine*/
+      background: url('../img/machineMobile.png') no-repeat;
+      background-position: center;
+      background-size: contain;
+      /*background-position-x: calc(50% + 30px);*/
+      min-height: auto;
+    }
     #casino .content > div {
-      padding-top: 255px;
+      padding-top: 70px;
       width: 80%;
       /*jiaqi...width: 300px;*/
       margin: 0 auto;
@@ -267,12 +274,16 @@ footer{
     }
   .btn-group{
         left:40%;
-        top:34.5%;
+        top:80%;
         width: 5px;
         height: 5px;
   }
   .slotMachine{
-    width: 50px;
+    width: 300px;
+    height: 300px;
+  }
+  .soundSlot{
+    width: 300px;
     height: 50px;
   }
   }
