@@ -260,7 +260,7 @@ footer{
       background-position:0px 0px;
       background-size: contain;
       /*background-position-x: calc(50% + 30px);*/
-      min-height: auto;
+      /*min-height: auto;*/
     }
     #casino .content > div {
       /*padding-top: 50px;*/
@@ -270,13 +270,14 @@ footer{
       /*transform: translateX(50px);*/
     }
     #casino .btn-group .btn {
-      padding: 20px;
+      padding: 16px;
     }
   .btn-group{
-        left:40%;
-        top:80%;
-        width: 5px;
-        height: 5px;
+        right:20%;
+        top:50%;
+        position:fixed;
+        z-index: 999999999;
+        margin: auto;
   }
   .slot {
     display: flex;
