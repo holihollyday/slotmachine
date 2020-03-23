@@ -278,8 +278,9 @@ footer{
     p{
       margin: 0px 0px;
       text-align: left;
-      padding-left: 1px;
+      padding-left: 10px;
       color:white;
+      font-size: 12px;
     }
     #casino{
       background: url('../img/machineMobile.png') no-repeat;
@@ -325,7 +326,7 @@ footer{
  .btn-group{
       left:20%;
       right:50%;
-      bottom:10%;
+      bottom:15%;
       position:fixed;
       z-index: 999999999;
       margin: auto;
