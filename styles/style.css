@@ -157,7 +157,7 @@ header a {
    background: url('../img/machine2.png') no-repeat 30% 30% ;
    background-size: 90%;
    /*background-position-x: calc(50% + 30px);*/
-   min-height: 700px;
+   min-height: 680px;
  }
 
  #casino .content > div {
@@ -276,7 +276,7 @@ footer{
       /*background: url('../img/machineMobile.png') no-repeat;*/
       background-position:0px 0px;
       background-size: cover;
-      margin: 0px 0px 0px 0px;
+      margin: 0px -20px 0px 0px;
       background-size: 0%;
       /*background-position-x: calc(50% + 30px);*/
       /*min-height: auto;*/
