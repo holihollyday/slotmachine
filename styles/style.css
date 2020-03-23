@@ -298,7 +298,7 @@ footer{
       margin: 0px 0px 0px 0px;
       background-size: 0%;
       /*background-position-x: calc(50% + 30px);*/
-      /*min-height: auto;*/
+      min-height: auto;
     }
     #casino .content > div {
       /*padding-top: 50px;*/
