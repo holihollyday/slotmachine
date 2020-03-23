@@ -17,7 +17,7 @@
   padding: 25px;
   background-color: rgba(245, 245, 245, 0.7);
   border-radius: 5px;
-    background-color:black;
+  background-color:black;
 }
 
 .well p {
@@ -38,7 +38,7 @@ h1 {
 .container {
   padding-top: 50px;
   padding-bottom: 50px;
-    background-color:black;
+  background-color:black;
 }
 
 a{
@@ -244,19 +244,26 @@ footer{
     padding-left: 1px;
     color:white;
   }
+
+  #casino .content:nth-child(1) {
+    background-size: 90%;
+    /*background-position-x: calc(50% + 30px);*/
+    min-height: 450px;
+  }
+
   #casino .content > div {
-    padding-top: 255px;
-    padding-left:-20px;
-    width: 80%;
+    padding-top: 175px;
+    padding-left:50px;
+    width: 100%;
     /*jiaqi...width: 300px;*/
-    margin: 0 auto;
+    margin: -60px auto;
     /*transform: translateX(-50)px);*/
   }
   #casino .btn-group .btn {
     padding: 30px;
   }
   .btn-group{
-       left:40%;
+       left:60%;
        top:80%;
        width: 10px;
        height: 10px;
