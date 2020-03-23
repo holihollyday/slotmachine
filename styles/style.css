@@ -302,23 +302,56 @@ footer{
       /*transform: translateX(50px);*/
     }
 
-    #casino .btn-group {
+    /*#casino .btn-group {
       display: flex;
-      align-items: center;
-      justify-content: center;
+      /*align-items: center;*/
+      /*justify-content: center;
+      float:left;
       /*margin-top: 150px;*/
-    }
+    /*}*/
 
-    #casino .btn-group .btn {
+    /*#casino .btn-group .btn {
       padding: 16px;
-    }
-  .btn-group{
+    }*/
+  /*.btn-group{
         bottom:20%;
         position:absolute;
         z-index: 999999999;
-        margin: auto;
+        margin:0 auto;
+  }*/
+  /*#casino .btn-group {
+    display: flex;
+    align-items: center;
+    /*justify-content: center;*/
+    /*margin-top: 150px;*/
+/*  }*/
+
+  #casino .btn-group .btn {
+    background-color: black;
+    border-color: #e8bf00;
+    padding: 16px;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 80px;
+    vertical-align: middle;
   }
 
+  #casino .btn-group .btn:hover, .btn-group .btn:focus {
+    background-color: #e8bf00;
+    border-radius: 80px;
+  }
+
+ .btn-group{
+      left:20%;
+      right:50%;
+      top:80%;
+      position:fixed;
+      z-index: 999999999;
+      margin: auto;
+      right:0;
+      width: 20em;
+      height: 20em;
+ }
   .slot {
     display: block;
     margin: 0px 0px 0px 0px;
