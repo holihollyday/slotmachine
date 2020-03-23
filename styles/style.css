@@ -294,7 +294,7 @@ footer{
       /*background: url('../img/machineMobile.png') no-repeat;*/
       background-position:0px 0px;
       background-size: cover;
-      margin: 0px -20px 0px 0px;
+      margin: 0px 0px 0px 0px;
       background-size: 0%;
       /*background-position-x: calc(50% + 30px);*/
       /*min-height: auto;*/
@@ -303,7 +303,7 @@ footer{
       /*padding-top: 50px;*/
       width: 100%;
       /*jiaqi...width: 300px;*/
-      margin: -150px 0px 0px 0px;
+      margin: -110px 0px 0px 0px;
       /*transform: translateX(50px);*/
     }
 
