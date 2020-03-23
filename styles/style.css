@@ -274,7 +274,7 @@ footer{
   }
 }
 
-  @media only screen and (max-width:400px) {
+  @media only screen and (max-width:600px) {
 
     #casino{
       background: url('../img/machineMobile.png') no-repeat;
@@ -301,11 +301,18 @@ footer{
       margin: -220px 0px 0px 0px;
       /*transform: translateX(50px);*/
     }
+
+    #casino .btn-group {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      /*margin-top: 150px;*/
+    }
+
     #casino .btn-group .btn {
       padding: 16px;
     }
   .btn-group{
-        left:10%;
         bottom:20%;
         position:absolute;
         z-index: 999999999;
