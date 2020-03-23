@@ -304,8 +304,8 @@ footer{
       /*padding-top: 50px;*/
       width: 100%;
       /*jiaqi...width: 300px;*/
-      margin: -110px 0px 0px 0px;
-      /*transform: translateX(50px);*/
+      margin: -110px -0px 0px 0px;
+      transform: translateX(50px);
     }
 
   #casino .btn-group .btn {
