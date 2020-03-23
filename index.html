@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="styles/style.css" type="text/css" media="screen" />
   <link rel="stylesheet" href="dist/jquery.slotmachine.css" type="text/css" media="screen" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" type="text/css" />
-
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
@@ -98,18 +98,95 @@
        </div>
      </div>
 
-     <div class="container">
-        <div class="row">
-          <div class="col-sm-10 col-md-5 offset-sm-1 offset-md-1">
-            <pre><code id="codeBlock5"></code></pre>
-          </div>
+     <hr width="100%" style="border: 4px dotted #ccd500" color="#000000" size="1">
 
-          <div class="col-sm-10 col-md-5 offset-sm-1 offset-md-0">
-            <pre><code id="codeBlock6"></code></pre>
-          </div>
-        </div>
-      </div>
-    </div>
+     <div class="w3-container">
+       <div class="w3-bar w3-black">
+         <button class="w3-bar-item w3-button tablink w3-yellow" onclick="openCity(event,'London')">Call for submission</button>
+         <button class="w3-bar-item w3-button tablink" onclick="openCity(event,'Paris')">About</button>
+         <button class="w3-bar-item w3-button tablink" onclick="openCity(event,'Tokyo')">Credit</button>
+       </div>
+
+       <div id="London" class="w3-container w3-border city" style="padding:30px 0px 30px 0px">
+           <div>
+      <p>How to submit:<br><br>
+       1. Feel free to submit to any or all categories: Sound Clip, Video,Text.<br><br>
+       2. You are welcome to submit more than one work for each category for us to choose from, but we will show only one work by you under each slot.<br><br>
+       3. All submissions are due to <a href="tnleditorial@lithium.gallery" style="color: #ccd500">tnleditorial@lithium.gallery</a>.<br><br>
+       4. Category Details:<br><br>
+       <ul>
+       <li>Sound Clip:</li>
+         <ul>
+           <li>Duration: Less than 5 minutes.</li>
+           <li>Format: Please provide us with a Youtube link of your sound work. You can unlist your file to make it not being public. </li>
+           <li>Content: You are welcome to submit independent sound projects or the soundtrack from any of your video pieces. However, try not to submit separately the visual and sound portion of the same video. The idea of this project is to pair moving image arbitrarily with other sound and vice versa; if a user happens to get the combination that shows your full video (image and sound), it just seems less interesting.</li>
+         </ul>
+
+       <li>Video:</li>
+         <ul>
+           <li>Duration: Less than 5 minutes.</li>
+           <li>Format: Please provide us with a Youtube link of your video work. You can unlist them but please don’t password-protect them. </li>
+           <li>Content: Please only submit works you think will be interesting shown in SILENCE; if you want to submit a silenced piece that originally relies heavily on sound/conversation (say, a talk show) to provoke frustration, that will work too. But just know that it will be shown with some other sound.</li>
+         </ul>
+
+       <li>Text:</li>
+         <ul>
+           <li>Length: Less than 200 words.</li>
+           <li>Format: Text.</li>
+           <li>Content: It can be prose, conversation, story, artwork description, etc.; long poems within the word count might not work due to space restriction). Original text is preferred unless otherwise intended. Any unconventional layout that takes up a lot more space will be ignore due to space restriction.</li>
+         </ul>
+
+       </ul>
+           </div>
+       </div>
+
+       <div id="Paris" class="w3-container w3-border city" style="display:none; padding:30px 0px 30px 0px">
+         <p>Like a normal slop machine, the Internet Art Slot Machine has three slots, 1) a silent video clip; 2) a sound clip; and 3) a short paragraph of text. <br><br>
+           By clicking on “Shuffle!” you randomize the combination of a silent moving image, a sound clip, and a text, and you will view the final combination as one whole piece. <br><br>
+           The idea behind this experimental curatorial project is to comment on the amalgamation of audiovisual information we get from Internet browsing.<br><br>
+           Concept: Nicky Ni<br>
+           Development: Jiaqi Zhang
+         </p>
+
+       </div>
+
+       <div id="Tokyo" class="w3-container w3-border city" style="display:none; padding:30px 0px 30px 0px">
+         <p><b>Sound Clip</b><br>
+         Katie Wood <i>Circle-1</i><br>
+         Cecilia Hua <i>100 ft</i><br>
+         Alan Perry <i>Interview with a Computer</i><br>
+         Manisha AR <i>Soft Shakers</i><br>
+         He You, Keer Yang <i>from 1st floor to 6th floor</i><br>
+         <br>
+         <b>Video</b><br>
+         Harrison Wyrick && Co. <i>KNIGHTS</i><br>
+         Alan Perry <i>The Ambulatory 1985 Edition</i><br>
+         Jooyoung Lee <i>bin garden</i><br>
+         Jooyoung Lee <i>cit-e-scape</i><br>
+         Amay Kataria <i>Bombay Beach 2020</i><br>
+         <br>
+         <b>Text</b><br>
+         Xu Han Five <i>Facts About Tears</i><br>
+         Xu Han The <i>Language of Tears</i><br>
+         Manisha AR <i>Fragments from July, p1 and p2</i>
+         <br>
+       </p>
+       </div>
+     </div>
+
+    <div class="container">
+       <div class="row">
+         <div class="col-sm-10 col-md-5 offset-sm-1 offset-md-1">
+           <pre><code id="codeBlock5"></code></pre>
+         </div>
+
+         <div class="col-sm-10 col-md-5 offset-sm-1 offset-md-0">
+           <pre><code id="codeBlock6"></code></pre>
+         </div>
+       </div>
+     </div>
+
+</div>
 
    <script id="codeBlock5">
 
@@ -326,6 +403,21 @@
             video1.stopVideo();video2.stopVideo();video3.stopVideo();video4.stopVideo();video5.stopVideo();video6.stopVideo();
        });
 
+</script>
+<script>
+function openCity(evt, cityName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("city");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-yellow", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " w3-yellow";
+}
 </script>
 </body>
 </html>
