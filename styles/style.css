@@ -341,7 +341,7 @@ footer{
  .btn-group{
       left:20%;
       right:50%;
-      bottom:15%;
+      top:80%;
       position:fixed;
       z-index: 999999999;
       margin: auto;
@@ -354,6 +354,7 @@ footer{
     margin: 0px 0px 0px 0px;
   }
 
+
   .slotMachine{
     margin: 0px 0px 0px 0px;
     width: 300px;
@@ -365,5 +366,7 @@ footer{
     width: 300px;
     height: 90px;
   }
-
+  .textSlot{
+    height: 170px;
+  }
   }
