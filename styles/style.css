@@ -317,7 +317,7 @@ footer{
     }
     #casino .content > div {
       /*padding-top: 50px;*/
-      width: 100%;
+      width: 90%;
       /*jiaqi...width: 300px;*/
       margin: -170px -0px 0px 0px;
       transform: translateX(-50px);
@@ -368,6 +368,5 @@ footer{
   }
   .textSlot{
     height: 170px;
-    text-align: center;
   }
   }
