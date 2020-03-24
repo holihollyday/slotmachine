@@ -101,7 +101,6 @@
 
     <hr width="100%" style="border: 4px dotted #ccd500" color="#000000" size="5">
 
-    <div class="w3-container">
       <div class="w3-bar w3-black">
         <button class="w3-bar-item w3-button tablink w3-yellow" onclick="openCity(event,'London')">Call for submission</button>
         <button class="w3-bar-item w3-button tablink" onclick="openCity(event,'Paris')">About</button>
@@ -146,7 +145,6 @@
             Like a normal slop machine, the Internet Art Slot Machine has three slots, 1) a silent video clip; 2) a sound clip; and 3) a short paragraph of text. <br><br> By clicking on “Shuffle!” you randomize the combination of a silent moving image, a sound clip, and a text, and you will view the final combination as one whole piece. <br><br>
               The idea behind this experimental curatorial project is to comment on the amalgamation of audiovisual information we get from Internet browsing.<br><br>
         </p>
-
       </div>
 
       <div id="Tokyo" class="w3-container w3-border city" style="display:none; padding:30px 0px 30px 0px">
@@ -162,7 +160,7 @@
         <p>Concept: Nicky Ni</p>
         <p>Web development: Jiaqi Zhang</p>
       </div>
-    </div>
+
 
     <div class="container">
       <div class="row">
@@ -204,7 +202,9 @@
         playerVars: {
           'rel': 0,
           'controls': 0,
-          'autoplay': 1
+          'autoplay': 1,
+          'loop':1,
+          'playlist': 'JOZPKYCbVsI'
         }
       });
       //Harrison
@@ -215,7 +215,9 @@
         playerVars: {
           'rel': 0,
           'controls': 0,
-          'autoplay': 1
+          'autoplay': 1,
+          'loop':1,
+          'playlist': 'JOZPKYCbVsI'
         }
       });
       //Alanvideo
@@ -226,7 +228,9 @@
         playerVars: {
           'rel': 0,
           'controls': 0,
-          'autoplay': 1
+          'autoplay': 1,
+          'loop':1,
+          'playlist': 'JOZPKYCbVsI'
         }
       });
       //Amay
@@ -237,7 +241,9 @@
         playerVars: {
           'rel': 0,
           'controls': 0,
-          'autoplay': 1
+          'autoplay': 1,
+          'loop':1,
+          'playlist': 'JOZPKYCbVsI'
         }
       });
       //Jooyoung cit-e-scape
@@ -248,7 +254,9 @@
         playerVars: {
           'rel': 0,
           'controls': 0,
-          'autoplay': 1
+          'autoplay': 1,
+          'loop':1,
+          'playlist': 'JOZPKYCbVsI'
         }
       });
       //Jooyoung garden
@@ -259,7 +267,9 @@
         playerVars: {
           'rel': 0,
           'controls': 0,
-          'autoplay': 1
+          'autoplay': 1,
+          'loop':1,
+          'playlist': 'JOZPKYCbVsI'
         }
       });
       /////AUDIO WORKS////
@@ -407,19 +417,20 @@
     });
   </script>
   <script>
-    function openCity(evt, cityName) {
-      var i, x, tablinks;
-      x = document.getElementsByClassName("city");
-      for (i = 0; i < x.length; i++) {
-        x[i].style.display = "none";
-      }
-      tablinks = document.getElementsByClassName("tablink");
-      for (i = 0; i < x.length; i++) {
-        tablinks[i].className = tablinks[i].className.replace(" w3-yellow", "");
-      }
-      document.getElementById(cityName).style.display = "block";
-      evt.currentTarget.className += " w3-yellow";
+  function openCity(evt, cityName) {
+    var i, x, tablinks;
+    x = document.getElementsByClassName("city");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
     }
+    tablinks = document.getElementsByClassName("tablink");
+    for (i = 0; i < x.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" w3-yellow", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " w3-yellow";
+  }
+
   </script>
 </body>
 
