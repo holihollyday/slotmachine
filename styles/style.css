@@ -319,7 +319,7 @@ footer{
       /*padding-top: 50px;*/
       width: 100%;
       /*jiaqi...width: 300px;*/
-      margin: -110px -0px 0px 0px;
+      margin: -170px -0px 0px 0px;
       transform: translateX(-50px);
     }
 
@@ -341,7 +341,7 @@ footer{
  .btn-group{
       left:20%;
       right:50%;
-      top:80%;
+      top:70%;
       position:fixed;
       z-index: 999999999;
       margin: auto;
@@ -368,5 +368,6 @@ footer{
   }
   .textSlot{
     height: 170px;
+    text-align: center;
   }
   }
