@@ -17,6 +17,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   <script src="dist/slotmachine.js"></script>
   <script src="dist/jquery.slotmachine.js"></script>
+  <script src="dist/jquery.slotmachine.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/javascript.min.js"></script>
   <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
@@ -31,6 +32,9 @@
           <button id="casinoShuffle" type="button" class="btn btn-primary">Shuffle!</button>
         </div>
         <div id="casino1" class="soundSlot slotMachine">
+          <div class="slot audioSlot">
+            <div id="audio0"> </div>
+          </div>
           <div class="slot audioSlot">
             <div id="audio1"> </div>
           </div>
@@ -50,10 +54,10 @@
 
         <div id="casino2" class="slotMachine">
           <div class="slot ">
-            <div id="video1"></div>
+            <div id="video0"></div>
           </div>
           <div class="slot ">
-            <div id="video0"></div>
+            <div id="video1"></div>
           </div>
           <div class="slot ">
             <div id="video2"></div>
@@ -64,12 +68,19 @@
           <div class="slot ">
             <div id="video4"></div>
           </div>
-          <div class="slot ">
+          <div class="slot">
             <div id="video5"></div>
+          </div>
+          <div class="slot">
+            <div id="video6"></div>
           </div>
         </div>
 
         <div id="casino3" class="textSlot slotMachine">
+          <div class="slot writing">
+            <p>Internet Art Slot Machine is an experimental curatorial project. It comments on the amalgamation of audiovisual information we get from Internet browsing.<br><br>
+            Click "shuffle!" Try Your Luck.</p>
+          </div>
           <div class="slot writing"><br>
             <p>
               and<br> it can be hard to collect your thoughts in one place to from full sentences with wholesome thoughts with meaning.</p>
@@ -77,10 +88,6 @@
           <div class="slot writing"><br>
             <p>It can be hard to find meaning in someone else's words.
             </p>
-          </div>
-          <div class="slot writing">
-            <p>Internet Art Slot Machine is an experimental curatorial project.It comments on the amalgamation of audiovisual information we get from Internet browsing.<br><br>
-            Click "shuffle!" Try Your Luck.</p>
           </div>
           <div class="slot writing">
             <p>
@@ -188,9 +195,8 @@
 
     // 3. This function creates an <iframe> (and YouTube player)
     //    after the API code downloads.
-    var video1;var video2;var video3;var video4;var video5;
-    var audio1;var audio2;var audio3;var audio4;var audio5;
-    var playing = false;
+    var video0; var video1; var video2; var video3; var video4; var video5;
+    var audio0; var audio1; var audio2; var audio3; var audio4; var audio5;
 
     function onYouTubeIframeAPIReady() {
       /////VIDEO WORKS////
@@ -215,9 +221,9 @@
         playerVars: {
           'rel': 0,
           'controls': 0,
-          'autoplay': 1,
+          'autoplay': 0,
           'loop':1,
-          'playlist': 'JOZPKYCbVsI'
+          'playlist': '7Os0jee2qoc'
         }
       });
       //Alanvideo
@@ -230,7 +236,7 @@
           'controls': 0,
           'autoplay': 1,
           'loop':1,
-          'playlist': 'JOZPKYCbVsI'
+          'playlist': 'Zp4xEFaqKv8'
         }
       });
       //Amay
@@ -243,7 +249,7 @@
           'controls': 0,
           'autoplay': 1,
           'loop':1,
-          'playlist': 'JOZPKYCbVsI'
+          'playlist': 'zUOHACihE5k'
         }
       });
       //Jooyoung cit-e-scape
@@ -256,9 +262,10 @@
           'controls': 0,
           'autoplay': 1,
           'loop':1,
-          'playlist': 'JOZPKYCbVsI'
+          'playlist': '1webuQ1su0U'
         }
       });
+
       //Jooyoung garden
       video5 = new YT.Player('video5', {
         height: '100%',
@@ -269,10 +276,21 @@
           'controls': 0,
           'autoplay': 1,
           'loop':1,
-          'playlist': 'JOZPKYCbVsI'
+          'playlist': '9vV4Q7ZyLbk'
         }
       });
+
       /////AUDIO WORKS////
+      //Katie
+      audio0 = new YT.Player('audio0', {
+        height: '0.1',
+        width: '0.1',
+        videoId: 'rGycZ_wgSHU',
+        playerVars: {
+          'rel': 0,
+          'controls': 0
+        }
+      });
       //Katie
       audio1 = new YT.Player('audio1', {
         height: '0.1',
@@ -305,7 +323,7 @@
       });
       //Keer
       audio4 = new YT.Player('audio4', {
-        height: '0.1',
+        height: '0.1%',
         width: '0.1%',
         videoId: 'NhviYZbvV-4',
         playerVars: {
@@ -333,20 +351,27 @@
     const casino3 = document.querySelector('#casino3');
     const mCasino1 = new SlotMachine(casino1, {
       active: 0,
-      delay: 500
+      // delay: 100
     });
     const mCasino2 = new SlotMachine(casino2, {
-      active: 1,
-      delay: 500
+      active: 0,
+      // delay: 100
     });
     const mCasino3 = new SlotMachine(casino3, {
-      active: 2,
-      delay: 500
+      active: 0,
+      // delay: 100
     });
   </script>
 
   <script id="codeBlock6">
     btnShuffle.addEventListener('click', () => {
+      audio0.stopVideo();
+      audio1.stopVideo();
+      audio2.stopVideo();
+      audio3.stopVideo();
+      audio4.stopVideo();
+      audio5.stopVideo();
+
       count = 3;
       mCasino1.shuffle(9999);
       mCasino2.shuffle(9999);
@@ -355,7 +380,10 @@
       switch (count) {
         case 3:
           mCasino1.stop(function playVideo() {
-            console.log(mCasino1.visibleTile);
+            console.log("audioFile"+ mCasino1.visibleTile);
+            if (mCasino1.visibleTile == 0) {
+              audio0.playVideo();
+            }
             if (mCasino1.visibleTile == 1) {
               audio1.playVideo();
             }
@@ -375,13 +403,14 @@
           //  break;
         case 2:
           mCasino2.stop(function playVideo() {
-            console.log(mCasino2.visibleTile);
+            console.log("videoFile"+ mCasino2.visibleTile);
             if (mCasino2.visibleTile == 0) {
-              video1.playVideo();
-              video1.mute();
+              video0.playVideo();
+              video0.mute();
             }
             if (mCasino2.visibleTile == 1) {
-              video0.playVideo();
+              video1.playVideo();
+              video1.mute();
             }
             if (mCasino2.visibleTile == 2) {
               video2.playVideo();
@@ -393,9 +422,11 @@
               video4.playVideo();
             }
             if (mCasino2.visibleTile == 5) {
-              video5.playVideo();
+              video1.playVideo();
             }
-
+            if (mCasino2.visibleTile == 6) {
+              mCasino2.next();
+            }
           });
           //  break;
         case 1:
@@ -403,20 +434,15 @@
           //  break;
       }
       count--;
-      audio1.stopVideo();
-      audio2.stopVideo();
-      audio3.stopVideo();
-      audio4.stopVideo();
-      audio5.stopVideo();
-      audio6.stopVideo();
-      video1.stopVideo();
-      video2.stopVideo();
-      video3.stopVideo();
-      video4.stopVideo();
-      video5.stopVideo();
+
+      // video1.stopVideo();
+      // video2.stopVideo();
+      // video3.stopVideo();
+      // video4.stopVideo();
+      // video5.stopVideo();
     });
-  </script>
-  <script>
+</script>
+<script>
   function openCity(evt, cityName) {
     var i, x, tablinks;
     x = document.getElementsByClassName("city");
